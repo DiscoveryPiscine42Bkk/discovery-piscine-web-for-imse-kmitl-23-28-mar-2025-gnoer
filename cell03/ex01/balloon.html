@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ลูกโป่งระเบิด</title>
+    <title>balloon</title>
     <style>
         body {
             display: flex;
@@ -35,7 +35,6 @@
         let colors = ["red", "green", "blue"];
         let colorIndex = 0;
 
-        // เมื่อคลิก -> ขยายขนาดและเปลี่ยนสี
         balloon.addEventListener("click", function () {
             size += 10;
             colorIndex = (colorIndex + 1) % colors.length;
@@ -52,7 +51,6 @@
             }
         });
 
-        // เมื่อเมาส์ออก -> ลดขนาดและเปลี่ยนสี
         balloon.addEventListener("mouseleave", function () {
             if (size > 200) {
                 size -= 5;
